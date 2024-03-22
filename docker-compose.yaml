@@ -1,13 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
   postgres:
     image: postgres:latest
-    container_name: postgres_rust
+    container_name: rust
     ports:
       - "5432:5432"
     environment:
       POSTGRES_DB: users_crud
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 1234
-
