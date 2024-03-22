@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(300) NOT NULL,
     password VARCHAR(200) NOT NULL,
     created_at TIMESTAMP NOT NULL,
-    updated_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP,
     is_adm BOOLEAN DEFAULT FALSE
 );
 
